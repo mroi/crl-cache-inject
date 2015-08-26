@@ -1,0 +1,9 @@
+[submodule "security_ocspd"]
+	path = contrib/security_ocspd
+	url = https://github.com/aosm/security_ocspd.git
+[submodule "Security"]
+	path = contrib/Security
+	url = https://github.com/aosm/Security.git
+[submodule "launchd"]
+	path = contrib/launchd
+	url = https://github.com/aosm/launchd.git
