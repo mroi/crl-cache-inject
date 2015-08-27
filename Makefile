@@ -22,6 +22,7 @@ SRC = src/crlinject.cpp src/stubs.cpp \
 	contrib/Security/Security/libsecurity_utilities/lib/mach++.cpp \
 	contrib/Security/Security/libsecurity_utilities/lib/threading.cpp \
 	contrib/security_ocspd/server/attachCommon.cpp \
+	contrib/security_ocspd/server/crlDb.cpp \
 	contrib/security_ocspd/server/crlRefresh.cpp
 GEN = contrib/Security/Security/libsecurity_utilities/lib/utilities_dtrace.h
 OBJ = $(SRC:.cpp=.o)
