@@ -27,7 +27,7 @@ SRC = src/crlinject.cpp src/stubs.cpp \
 GEN = contrib/Security/Security/libsecurity_utilities/lib/utilities_dtrace.h
 OBJ = $(SRC:.cpp=.o)
 
-CPPFLAGS = -Iinclude
+CPPFLAGS = -Iinclude -DOCSP_USE_SYSLOG=1 -Dsyslog=syslog_printf
 CXXFLAGS = -Os -Wall -Wno-deprecated-declarations
 
 .PHONY: all clean

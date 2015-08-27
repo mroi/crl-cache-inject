@@ -1,6 +1,7 @@
 #include <security_cdsa_utilities/Schema.h>
 #include "../contrib/security_ocspd/server/ocspdNetwork.h"
 
+#include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -14,4 +15,14 @@ CSSM_RETURN ocspdNetFetch(Allocator &alloc, const CSSM_DATA &url, LF_Type lfType
 {
 	printf("ocspdNetFetch called\n");
 	abort();
+}
+
+extern "C"
+void syslog_printf(int priority, const char *message, ...)
+{
+	va_list args;
+	va_start(args, message);
+	vprintf(message, args);
+	va_end(args);
+	if (message[strlen(message) - 1] != '\n') puts("");
 }
