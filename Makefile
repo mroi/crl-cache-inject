@@ -29,7 +29,7 @@ OBJ = $(SRC:.cpp=.o)
 CPPFLAGS = -Iinclude
 CXXFLAGS = -Wall -Wno-deprecated-declarations
 
-.PHONY: all clean force
+.PHONY: all clean
 
 all: crlinject
 
