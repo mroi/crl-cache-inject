@@ -28,7 +28,7 @@ GEN = contrib/Security/Security/libsecurity_utilities/lib/utilities_dtrace.h
 OBJ = $(SRC:.cpp=.o)
 
 CPPFLAGS = -Iinclude
-CXXFLAGS = -Wall -Wno-deprecated-declarations
+CXXFLAGS = -Os -Wall -Wno-deprecated-declarations
 
 .PHONY: all clean
 
