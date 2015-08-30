@@ -39,6 +39,7 @@ clean:
 
 crlinject: $(OBJ)
 	$(CXX) -o $@ -framework Security -framework CoreFoundation $^
+	codesign -s "`id -F`" $@
 
 $(OBJ): $(GEN)
 
