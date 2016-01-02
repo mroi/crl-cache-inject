@@ -6,9 +6,7 @@
 int main(int argc, char *argv[])
 {
 	if (argc < 2) {
-		puts("usage: crlinject URL < CRL\n");
-		puts("recommended for GeoTrust CRL:");
-		puts("curl -s http://crl.geotrust.com/crls/gtglobal.crl | openssl crl -inform PEM -outform DER | sudo crlinject http://crl.geotrust.com/crls/gtglobal.crl");
+		puts("usage: crlinject URL < CRL");
 		exit(0);
 	}
 
