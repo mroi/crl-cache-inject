@@ -1,3 +1,5 @@
+*This project is no longer actively maintained.*
+
 OS X CRL Cache Injector
 =======================
 
@@ -9,7 +11,7 @@ Ordinarily, `ocspd` does the right thing, but for faulty certificate authorities
 become necessary to manually place entries in the cache. This used to be the case for 
 GeoTrust certificates, which pointed to a CRL in PEM format, violating current best 
 practices (see RFCs [5280](http://www.ietf.org/rfc/rfc5280.txt) and 
-[2585](http://www.ietf.org/rfc/rfc2585.txt)). This has been fixed as of December 3rd.
+[2585](http://www.ietf.org/rfc/rfc2585.txt)). This has been fixed as of December 3rd 2016.
 
 This work is a derivation of code from [Apple’s Open Source 
 Releases](http://www.opensource.apple.com) and is thus licensed under the 
